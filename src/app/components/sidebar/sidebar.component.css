@@ -1,0 +1,12 @@
+.side-bar{
+    width: 200px;
+    height: 100%;
+    background-color: aqua;
+    position: fixed;
+    left: 0;
+    top: 50px;
+}
+
+.side-bar-header{
+    text-align: center;
+}
