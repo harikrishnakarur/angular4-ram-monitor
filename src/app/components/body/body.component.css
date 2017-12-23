@@ -1,0 +1,9 @@
+.app-body{
+    position: fixed;
+    display: inline-block;
+    top: 50px;
+    left: 200px;
+    padding: 10px;
+    height: calc(100% - 70px);
+    width: calc(100% - 220px);
+}

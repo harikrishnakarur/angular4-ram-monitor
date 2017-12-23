@@ -10,3 +10,9 @@
 .side-bar-header{
     text-align: center;
 }
+
+.side-bar-list{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
