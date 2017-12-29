@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { CpuComponent } from './components/body/cpu/cpu.component';
 import { RamComponent } from './components/body/ram/ram.component';
+import { ComponentShowHideService } from './services/component-show-hide.service';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { RamComponent } from './components/body/ram/ram.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ComponentShowHideService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

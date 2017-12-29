@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComponentShowHideService } from '../../services/component-show-hide.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,13 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
     toggles:string;
-    components: {
-        name:string,
-        show:boolean
-    }[];
-  constructor() { 
+    components: Object;
+constructor(private component:ComponentShowHideService) { 
     this.toggles = "Toggles";
-      this.components = [{name:"CPU",show:true},{name:"RAM",show:true}];
+    this.components = this.component.getStates();
   }
 
   ngOnInit() {
