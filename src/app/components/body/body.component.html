@@ -1,4 +1,4 @@
 <div class="app-body">
-    <app-cpu></app-cpu>
-    <app-ram></app-ram>
+    <app-cpu *ngIf="components.CPU"></app-cpu>
+    <app-ram *ngIf="components.RAM"></app-ram>
 </div>

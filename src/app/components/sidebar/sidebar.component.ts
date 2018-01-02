@@ -12,11 +12,12 @@ export class SidebarComponent implements OnInit {
 constructor(private component:ComponentShowHideService) { 
     this.toggles = "Toggles";
     this.components = this.component.getStates();
+    this.objectKeys = Object.keys;
   }
 
   ngOnInit() {
   }
 toggle(component){
-    component.show = !component.show;
+    this.components[component] = !this.components[component];
 }
 }
