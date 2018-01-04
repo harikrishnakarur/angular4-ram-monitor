@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class ComponentShowHideService {
@@ -11,7 +10,6 @@ getStates(){
   }
 setStates(key){
 this.components[key] = !this.components[key];
-//    return this.components;
 }
 
 }

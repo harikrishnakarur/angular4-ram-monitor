@@ -1,6 +1,8 @@
 <div class="side-bar">
     <p class="side-bar-header">{{toggles}}</p>
     <ul>
-        <li *ngFor="let key of objectKeys(components)" (click)="toggle(key)" class="side-bar-list">{{key}}-{{components[key]}}</li>
+        <li *ngFor="let key of objectKeys(components)" (click)="toggle(key)" class="side-bar-list">{{key}}
+        <input type="checkbox" [(ngModel)]="components[key]" name="component_selection">
+        </li>
     </ul>
 </div>

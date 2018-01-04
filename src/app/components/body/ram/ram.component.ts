@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ComponentShowHideService } from '../../../services/component-show-hide.service';
+import { HttpService } from '../../../services/http.service';
 
 @Component({
   selector: 'app-ram',
@@ -8,9 +9,10 @@ import { ComponentShowHideService } from '../../../services/component-show-hide.
 })
 export class RamComponent implements OnInit {
 
-  constructor() { }
+constructor(private http: HttpService) { }
 
   ngOnInit() {
+    this.http.getData();
   }
 
 }
