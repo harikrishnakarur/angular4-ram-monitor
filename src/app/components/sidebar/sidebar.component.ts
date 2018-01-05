@@ -9,6 +9,7 @@ import { ComponentShowHideService } from '../../services/component-show-hide.ser
 export class SidebarComponent implements OnInit {
     toggles:string;
     components: Object;
+objectKeys: any;
 constructor(private component:ComponentShowHideService) { 
     this.toggles = "Toggles";
     this.components = this.component.getStates();
